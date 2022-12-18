@@ -1,0 +1,111 @@
+
+/* #region general */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: cursive;
+
+}
+.container{
+    width: 1024px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+  max-width: 100%;
+}
+/* #endregion: general */
+/* #region myStyle*/
+header, footer{
+    background-color: gray;
+    padding: 1rem 2rem;
+}
+h1{
+    font-size: 2rem;
+    color:  blue;
+}
+h2{
+    color: indigo;
+    font-size: 3.3rem;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+a{
+    text-transform: uppercase;
+    color: lightgoldenrodyellow;
+    padding: 1rem;
+}
+a:hover{
+    text-decoration: underline;
+}
+.mt10{
+  margin-top: 10rem;
+}
+.mt5{
+  margin-top: 5rem;
+}
+.mb5{
+  margin-bottom: 5rem;
+}
+/* #endregion myStyle*/
+
+.root__wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+.main{
+  flex-grow: 1;
+}
+.d-flex{
+  display: flex;
+}
+.jcsb{
+  justify-content: space-between;
+}
+.wrap{
+  flex-wrap: wrap;
+}
+.g1{
+  gap: 1rem
+}
+.col3{
+  width: calc(100%/3);
+  padding: 1rem;
+}
+.tas{
+  text-align: start;
+}
+.tac{
+  text-align: center;
+}
+.bookImg{
+  height: 53rem;
+  border: 2px solid #d7ef00;
+  border-radius: 2rem;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
