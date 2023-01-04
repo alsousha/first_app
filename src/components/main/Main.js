@@ -1,34 +1,19 @@
-import Book from '../book/Book';
-import Data from '../../data/books.json';
-import State from '../state/State';
-//import books2 from '../../data/books2'
+import Books from "../book/Books";
+import Counter from "../btns/counter/Counter";
+import Login from "../btns/LoginForm/login";
 
-function Main(){
-    function tmp(num ){
-        //send referens to State
-        console.log('In tmp' + num );
-    }
+function Main() {
+  function getLoginStatus(status) {
+    //send referens to State
+    console.log("login status of user is" + status);
+  }
 
-    return (
+  return (
     <div className="main">
-            {/* 16.12 */}
-            <State age = "35" name="SF" fun = {tmp}></State>
-
-
-
-
-        <div className="container">
-            <h2 className='tac mt10'>Our books</h2>
-
-            <div className="books_wrapper d-flex jcsb wrap mt5 mb5">
-              
-                {Data.map((book) => {
-                    return <Book bookItem={book} color="green"/>
-                })}
-                
-            </div>
-        </div>
+      <Counter />
+      <Login status={getLoginStatus} />
+      <Books />
     </div>
-    )
+  );
 }
 export default Main;

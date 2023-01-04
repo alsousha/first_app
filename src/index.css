@@ -59,12 +59,18 @@ a{
 a:hover{
     text-decoration: underline;
 }
+.f2 p{
+	font-size: 2rem;
+}
 .mt10{
   margin-top: 10rem;
 }
 .mt5{
   margin-top: 5rem;
 }
+.mt1{
+	margin-top: 1rem;
+  }
 .mb5{
   margin-bottom: 5rem;
 }
@@ -82,8 +88,17 @@ a:hover{
 .d-flex{
   display: flex;
 }
+.f-col{
+	flex-direction: column;
+}
+.aic{
+	align-items: center;
+}
 .jcsb{
   justify-content: space-between;
+}
+.jcc{
+	justify-content: center;
 }
 .wrap{
   flex-wrap: wrap;
