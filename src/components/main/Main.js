@@ -1,6 +1,8 @@
 import Books from "../book/Books";
 import Counter from "../btns/counter/Counter";
 import Login from "../btns/LoginForm/login";
+import Comments from "../comments/Comments";
+import Todo from "../todo/Todo";
 
 function Main() {
   function getLoginStatus(status) {
@@ -10,6 +12,8 @@ function Main() {
 
   return (
     <div className="main">
+      <Todo />
+      <Comments />
       <Counter />
       <Login status={getLoginStatus} />
       <Books />
